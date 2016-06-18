@@ -1,0 +1,23 @@
+<div class='container'>
+  <h1 class='page-header center'>
+    Add New Product or Bulk Upload
+  </h1>
+</div>
+
+<div class="col-sm-offset-3">
+  <div class="col-sm-8">
+    <div class="well">
+      <h3 class='page-header center'>Bulk Upload Products</h3>
+      <%= form_tag import_admin_vendor_products_path(@vendor), class: "form-group", multipart: true do %>
+
+      <%= file_field_tag :file %>
+      <br>
+      <%= submit_tag "Import CSV", class: "btn btn-primary" %>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<div class="voffset">
+  <%= render 'form' %>
+</div>

@@ -1,0 +1,38 @@
+<div class="col-sm-offset-3">
+  <div class="col-sm-8">
+
+    <div class="well">
+
+        <h1>Sign In</h1>
+
+      <%= form_tag signin_path do %>
+
+      <% if @sign_in_error %>
+      <p class="alert alert-danger">
+        <%= @sign_in_error %>
+      </p>
+      <% end %>
+
+      <div id="padding-form">
+        <div class="form-group">
+          <%= label_tag :email, nil, class:"control-label" %>
+          <%= email_field_tag :email, "", class:"form-control" %>
+        </div>
+      </div>
+
+      <div id="padding-form">
+        <div class="form-group">
+          <%= label_tag :password, nil, class:"control-label"  %>
+          <%= password_field_tag :password, "", class:"form-control" %>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <%= submit_tag "Sign in", class: "btn btn-primary btn-large" %>
+        <%= link_to ".. Sign Up if not registered", signup_path %>
+      </div>
+
+      <% end %>
+    </div>
+  </div>
+</div>
