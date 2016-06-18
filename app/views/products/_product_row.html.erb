@@ -1,0 +1,22 @@
+
+
+  
+    
+      <% product.name %>
+    
+    
+      
+      <%= form_for order_item, remote: true do |f| %>
+      <!-- <h4 class="text-right">Unit Price: <span style="color: green"><%= number_to_currency product.price %></span></h4> -->
+        
+          <%= f.hidden_field :quantity, value: 1, class: "form-control", min: 1 %>
+          <div >
+            <%= f.hidden_field :product_id, value: product.id %>
+            <%= f.submit "Add to Cart", class: "btn btn-primary btn-lg" %>
+          </div>
+        
+      <% end %>
+    
+    
+  
+

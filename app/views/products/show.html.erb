@@ -1,3 +1,4 @@
+
 <div class="container jumbotron show_panel">
   <div class="page-header">
     <h3 class="product-title"><%= @product.name %>
@@ -70,13 +71,15 @@
       <%= link_to @product.link2_title, @product.link2 %> <br>
       <% end %>
     </div>
+    
 
     <div class="product-stock">Available <%= @product.when_ready %>
-      <span id="buy-button">
-        <%= link_to "Add To Cart", buy_path, {class: "btn btn-primary btn-lg", id:"buy"}%>
+      <span>
+      <%= render "product_row", product: @product, order_item: @order_item %>
+        
       </span>
     </div>
 
   </div>
 </div>
-</div>
+
