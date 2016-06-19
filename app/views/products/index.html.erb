@@ -21,7 +21,11 @@
         <p><%= product.description.truncate(90) %></p>
 
       </div>
+
       <% end %>
     </div>
+
   </div>
+  <%= will_paginate @products, renderer: BootstrapPagination::Rails %>
 </div>
+
