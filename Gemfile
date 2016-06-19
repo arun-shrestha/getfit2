@@ -49,7 +49,7 @@ gem 'paperclip', '~> 4.2'
 gem 'iconv'
 gem 'prawn'
 gem 'masonry-rails'
-gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
+gem 'stripe'
 gem 'dotenv-rails', :groups => [:development, :test]
 gem 'selenium-webdriver'
 gem "rails-erd"
