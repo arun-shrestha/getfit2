@@ -1,0 +1,11 @@
+<div class="card card-block">
+  <h2>Browse by </h2>
+  <h4>Manufacturers</h4>
+    <% @vendors.each do |vendor| %>
+        <% if @vendor == vendor %>
+          <%= link_to vendor.name, root_path(vendor: vendor), class: 'btn btn-block btn-sm btn-default' %>
+        <% else %>
+          <%= link_to vendor.name, root_path(vendor: vendor), class: 'btn btn-block btn-sm btn-primary' %>
+        <% end %>
+    <% end %>
+</div>

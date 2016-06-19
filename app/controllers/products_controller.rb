@@ -4,6 +4,11 @@ class ProductsController < ApplicationController
     @products = Product.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 12)
     @vendors = Vendor.all
     @order_item = current_order.order_items.new
+    if params[:vendor]
+      @vendor = Vendor.find(params[:vendor])
+    else
+      @vendor = Vendor.all
+    end
   end
 
   def show
