@@ -13,7 +13,6 @@ Getfit is Esty style peer-to-peer ecommerce site where buyer discover activities
 ![Features by audience](public/images/features.png)
 
 #Users
-
 	- Have can register as a seller and start selling.
 	- Users have ability to browse products as a guest. Registration and sign in is not required unless they 
 	want to buy a product.
@@ -28,7 +27,6 @@ Getfit is Esty style peer-to-peer ecommerce site where buyer discover activities
 
 
 #Sellers
-
 	- Any vendors can be seller by simply clicking on 'Become a seller' link and create their own profile.
 	- Vendors can upload their logo, banner and their detailed information. 
 	- They have their own dashboard dedicated to them from where they can add, delete, edit their products and
