@@ -41,4 +41,4 @@ Getfit is Esty style peer-to-peer ecommerce site where buyer discover activities
   - Admin dashboard (Got vendor admin dashboard)
   
 #Documentation (Application Summary, Personas, User Stories, ERDs and Wireframes)
-	- https://1drv.ms/f/s!AjdhMg80TT-TpW2DnHBhjIyC_xjS
+	https://1drv.ms/f/s!AjdhMg80TT-TpW2DnHBhjIyC_xjS
