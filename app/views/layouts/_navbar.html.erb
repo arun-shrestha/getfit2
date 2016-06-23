@@ -29,11 +29,11 @@
     </form>
 
      <ul class="nav navbar-nav">
-          <li><%= link_to 'Smart Watch', vendors_path, class: "navbar-link" %></li>
-          <li><%= link_to 'Wrist Band', vendors_path, class: "navbar-link" %></li>
-          <li><%= link_to 'Smart Scale', vendors_path, class: "navbar-link" %></li>
-          <li><%= link_to 'Clip On', vendors_path, class: "navbar-link" %></li>
-          <li><%= link_to 'Others', vendors_path, class: "navbar-link" %></li>
+          <li><%= link_to "Wrist Band", products_path(:category1=>"Wrist Band"), class: "navbar-link" %></li>
+          <li><%= link_to "Smart Watch", products_path(:category1=>"Smart Watch"), class: "navbar-link" %></li>
+          <li><%= link_to "Smart Scale", products_path(:category1=>"Smart Scale"), class: "navbar-link" %></li>
+          <li><%= link_to "Clip On", products_path(:category1=>"Clip On"), class: "navbar-link" %></li>
+          <li><%= link_to "Others", products_path(:category1=>"Others"), class: "navbar-link" %></li>
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
